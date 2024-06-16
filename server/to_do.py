@@ -1,13 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_cors import CORS
+#from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
 
 # Configure SQLite database URI
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.sqlite'
+app.config['SQLAlchemy_TRACK_MODIFICATIONS'] = False
 
 # Initialize SQLAlchemy
 db = SQLAlchemy(app)
@@ -18,14 +19,14 @@ class Task(db.Model):
     title = db.Column(db.String(80), nullable=False)
     done = db.Column(db.Boolean, default=False)
 
+
 # Route to get all tasks
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
-    #tasks = Task.query.all()  # Query all tasks from the database
+    tasks = Task.query.all()  # Query all tasks from the database
     # Return tasks as JSON
-    #print(tasks)
-    #return jsonify([{'id': task.id, 'title': task.title, 'done': task.done} for task in tasks])
-    return {"tasks": ["task1", "task2", "task3"]}
+    return jsonify([{'id': task.id, 'title': task.title, 'done': task.done} for task in tasks])
+    #return {"tasks": ["task1", "task2", "task3"]}
 
 # Route to add a new task
 @app.route('/tasks', methods=['POST'])
