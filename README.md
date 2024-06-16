@@ -30,6 +30,6 @@ Use the command ```pip install -r requirements.txt``` to install all the package
 Go into the server directory and check if you have the virtual environment is activated, if you don't please activate it with the command ```source venv/bin/activate```. Now run the command ```python3 to_do.py``` to start runing the server.
 
 ### Start the frontend
-Open a new terminal tab and change into the client directory. Then, run the command ```npm start```. Now just type localhost:3000 into you're browser and you should see the website.
+Open a new terminal tab and change into the client directory. Then, run the command ```npm start```. Now just type ```localhost:3000``` into you're browser and you should see the website.
 
 **Enjoy TaskMaster!**
