@@ -40,7 +40,7 @@ function App() {
       })
   }
 
-  const handleComplete = (task) => { // Modified complete handler
+  const handleComplete = (task) => {
     fetch(`/tasks/${task.id}`, {
       method: 'PUT',
       headers: {

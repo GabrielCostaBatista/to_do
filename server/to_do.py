@@ -24,7 +24,6 @@ def get_tasks():
     tasks = Task.query.all()  # Query all tasks from the database
     # Return tasks as JSON
     return jsonify([{'id': task.id, 'title': task.title, 'done': task.done} for task in tasks])
-    #return {"tasks": ["task1", "task2", "task3"]}
 
 # Route to add a new task
 @app.route('/tasks', methods=['POST'])
