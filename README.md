@@ -16,7 +16,7 @@ If you haven't already installed Node.js, go to https://nodejs.org/en/download/p
 If you haven't already, install Tailwind CSS using the ```npm install -D tailwindcss``` command.
 
 ### React-Scripts
-Install react-scripts using the command: ```npm install react-scripts```.
+Install react-scripts using the ```npm install react-scripts``` command.
 
 ### Create a virtual environment
 Change directory into the server directory and use the command ```python3 -m venv venv``` to create a virtual environment. Then use the command ```source venv/bin/activate``` to activate it.
