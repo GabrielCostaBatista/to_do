@@ -5,7 +5,7 @@ Welcome to the TaskMaster – Your Ultimate To-Do List!
 ## Setting up TaskMaster
 
 ### Clone the repository
-Use the ```git clone (repository link)``` command to clone the TaskMaster repository.
+Use the ```git clone https://github.com/GabrielCostaBatista/to_do.git``` command to clone the TaskMaster repository.
 
 ### Node.js
 If you haven't already installed Node.js, go to https://nodejs.org/en/download/package-manager/current and follow the instructions to install it.
