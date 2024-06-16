@@ -19,7 +19,7 @@ If you haven't already, install Tailwind CSS using the ```npm install -D tailwin
 Run the ```npm install``` command.
 
 ### Create a virtual environment
-Change directory into the server directory and use the command ```python3 -m venv venv``` to create a virtual environment. Then use the command ```source venv/bin/activate``` to activate it.
+Change directory into the **server directory** and use the command ```python3 -m venv venv``` to create a virtual environment. Then use the command ```source venv/bin/activate``` to activate it.
 
 ### Install Packages
 Use the command ```pip install -r requirements.txt``` to install all the packages.
@@ -27,9 +27,9 @@ Use the command ```pip install -r requirements.txt``` to install all the package
 ## Running TaskMaster
 
 ### Start the server
-Go into the server directory and check if you have the virtual environment is activated, if you don't please activate it with the command ```source venv/bin/activate```. Now run the command ```python3 to_do.py``` to start runing the server.
+Go into the **server directory** and check if you have the virtual environment is activated, if you don't please activate it with the command ```source venv/bin/activate```. Now run the command ```python3 to_do.py``` to start runing the server.
 
 ### Start the frontend
-Open a new terminal tab and change into the client directory. Then, run the command ```npm start```. Now just type ```localhost:3000``` into you're browser and you should see the website.
+Open a new terminal tab and change into the **client directory**. Then, run the command ```npm start```. Now just type ```localhost:3000``` into you're browser and you should see the website.
 
 **Enjoy TaskMaster!**
