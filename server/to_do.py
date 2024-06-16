@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-#from flask_cors import CORS
+from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
-#CORS(app)
+CORS(app)
 
 # Configure SQLite database URI
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'
@@ -61,4 +61,4 @@ def update_task(task_id):
     return jsonify({'id': task.id, 'title': task.title, 'done': task.done})
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Run the app in debug mode
+    app.run(debug=True, port=8080)  # Run the app in debug mode

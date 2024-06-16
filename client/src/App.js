@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]) // Change initial state to an empty array
 
   useEffect(() => {
-  fetch('/tasks')
+  fetch('/test')
     .then(res => res.json())
     .then(data => {
     setData(data)
