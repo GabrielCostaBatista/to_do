@@ -11,7 +11,7 @@ Use the ```git clone https://github.com/GabrielCostaBatista/to_do.git``` command
 If you haven't already installed Node.js, go to https://nodejs.org/en/download/package-manager/current and follow the instructions to install it.
 
 ### Tailwind CSS
-If you haven't already install Tailwind CSS using the ```npm install -D tailwindcss``` command.
+If you haven't already, install Tailwind CSS using the ```npm install -D tailwindcss``` command.
 
 ### Create a virtual environment
 Change directory into the server directory and use the command ```python3 -m venv venv``` to create a virtual environment. Then use the command ```source venv/bin/activate``` to activate it.
