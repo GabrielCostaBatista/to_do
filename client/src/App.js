@@ -73,7 +73,7 @@ function App() {
     </form>
         <div className="bg-white shadow-md rounded px-8 pt-6 pb-8">
           {data.length === 0 ? (
-            <p>You have no tasks... Add some!</p>
+            <p>This is a To Do List! You have no tasks... Add some!</p>
           ) : (
             data.sort((a, b) => a.done - b.done).map((task, index) => (
               <div key={index} className="mb-4 border-b border-gray-200 pb-4 transition-all duration-500 ease-in-out">
