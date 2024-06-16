@@ -4,6 +4,8 @@ Welcome to the TaskMaster – Your Ultimate To-Do List!
 
 ## Setting up TaskMaster
 
+**Note**: For Windows you should use the equivalent commands to create and activate the virtual environment.
+
 ### Clone the repository
 Use the ```git clone https://github.com/GabrielCostaBatista/to_do.git``` command to clone the TaskMaster repository.
 
